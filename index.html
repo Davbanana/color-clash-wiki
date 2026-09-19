@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Clash Wiki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="secretTitle" aria-label="Color Clash Wiki">🎨 Color Clash Wiki</button>
+    <nav>
+      <a href="#home">Start</a>
+      <a href="#items">Items</a>
+      <a href="#secrets">Secrets</a>
+      <a href="#about">Über</a>
+    </nav>
+    <button id="themeToggle" class="theme-btn">☀️ Hell</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">MYSTERY GAMES STUDIO</p>
+      <h1>Color Clash Wiki</h1>
+      <p>Deine Fan-Wiki für Waffen, Paintballs, Tricks, Geheimnisse und alles rund um Color Clash.</p>
+      <div class="links">
+        <a class="button" href="https://www.roblox.com/" target="_blank" rel="noopener">🎮 Spiel</a>
+        <a class="button secondary" href="https://www.roblox.com/" target="_blank" rel="noopener">👥 Roblox-Gruppe</a>
+        <a class="button secondary" href="https://www.youtube.com/" target="_blank" rel="noopener">▶️ YouTube</a>
+      </div>
+    </section>
+
+    <section class="panel search-panel">
+      <input id="search" type="search" placeholder="🔎 Suche nach Waffen, Slots, HP, Tricks..." aria-label="Wiki durchsuchen">
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">Alles</button>
+        <button class="filter" data-filter="slot1">1. Slot</button>
+        <button class="filter" data-filter="slot2">2. Slot</button>
+        <button class="filter" data-filter="hp">HP</button>
+        <button class="filter" data-filter="tricks">Tricks</button>
+      </div>
+    </section>
+
+    <section id="items">
+      <h2>Die wichtigsten Sachen</h2>
+      <div class="grid" id="cards">
+        <article class="card" data-category="slot1" data-search="slot 1 waffe long range starke waffe">
+          <span class="tag">1. Slot</span>
+          <h3>🎯 Starke Fernkampfwaffen</h3>
+          <p>Slot 1 ist normalerweise für starke Waffen mit hoher Reichweite gedacht.</p>
+        </article>
+        <article class="card" data-category="slot2" data-search="slot 2 waffe cooldown schnell long range">
+          <span class="tag">2. Slot</span>
+          <h3>⚡ Schnelle Fernkampfwaffen</h3>
+          <p>Slot 2 ist ebenfalls für Reichweite gedacht, soll sich aber schneller einsetzen lassen und einen kleineren Cooldown haben.</p>
+        </article>
+        <article class="card" data-category="hp" data-search="hp leben health gesundheit">
+          <span class="tag">HP</span>
+          <h3>❤️ HP</h3>
+          <p>Hier werden später die wichtigen HP- und Lebensinformationen von Color Clash ergänzt.</p>
+        </article>
+        <article class="card" data-category="tricks" data-search="1-time autoshot trick">
+          <span class="tag">Trick</span>
+          <h3>💥 1-Time AutoShot</h3>
+          <p>Ein bekannter Trick, der später mit einer genauen Erklärung ergänzt wird.</p>
+        </article>
+        <article class="card" data-category="tricks" data-search="secrets codes geheimnisse codes">
+          <span class="tag">Secrets</span>
+          <h3>🔐 Codes & Geheimnisse</h3>
+          <p>Hier sammeln wir später Codes, versteckte Bereiche und andere Geheimnisse.</p>
+        </article>
+      </div>
+      <p id="noResults" class="empty hidden">Keine passenden Einträge gefunden.</p>
+    </section>
+
+    <section class="notice">
+      <h2>🚧 Noch nicht fertig</h2>
+      <p>Der 3. und 4. Slot sind im Spiel noch nicht fertig. Deshalb gibt es hier bewusst noch keine Bilder oder Beschreibungen dafür. Sobald sie fertig sind, können sie ergänzt werden.</p>
+    </section>
+
+    <section id="secrets" class="panel">
+      <h2>🔐 Geheimnisse</h2>
+      <p>Die geheimen Wiki-Funktionen sind vorbereitet. Drücke <strong>10× auf den Wiki-Namen oben</strong>, um den geheimen Bereich zu entdecken.</p>
+      <div id="secretArea" class="hidden secret-box">
+        <h3>🤫 Geheim-Bereich</h3>
+        <p>Du hast den geheimen Bereich gefunden!</p>
+        <p class="code">COLOR-CLASH-SECRET</p>
+        <p>Weitere Geheimnisse können hier später hinzugefügt werden.</p>
+      </div>
+    </section>
+
+    <section id="about" class="panel">
+      <h2>Über diese Wiki</h2>
+      <p>Diese Wiki gehört zum Roblox-Projekt <strong>Color Clash</strong> von <strong>Mystery Games Studio</strong>.</p>
+    </section>
+  </main>
+
+  <footer>🎨 Color Clash Wiki · Mystery Games Studio</footer>
+  <script src="script.js"></script>
+</body>
+</html>
